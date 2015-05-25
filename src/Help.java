@@ -24,8 +24,10 @@ public class Help {
                 do {
                     ignore = (char) System.in.read();
                 } while(ignore != '\n');
-            } while(choice < '1' | choice > '7' & choice != 'q');
 
+            } /*Runs loop until user selects 'q'*/ while(choice < '1' | choice > '7' & choice != 'q');
+
+            // Breaks loop
             if(choice == 'q') break;
 
             System.out.println("\n");
