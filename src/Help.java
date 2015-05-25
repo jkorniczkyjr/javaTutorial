@@ -1,5 +1,5 @@
 /**
- * Created by Joe on 5/25/2015.
+ * Here is a basic help file for some commands
  */
 public class Help {
     public static void main(String[] args)
@@ -25,7 +25,10 @@ public class Help {
                     ignore = (char) System.in.read();
                 } while(ignore != '\n');
 
-            } /*Runs loop until user selects 'q'*/ while(choice < '1' | choice > '7' & choice != 'q');
+            }
+
+            //Runs loop until user selects 'q'
+            while(choice < '1' | choice > '7' & choice != 'q');
 
             // Breaks loop
             if(choice == 'q') break;
